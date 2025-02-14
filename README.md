@@ -7,3 +7,8 @@
 3. Create repo in github and follow instructions to to push an existing directory from the command line
 4. `pnpm install`
 5. `pnpm run dev`
+
+## Challenges
+
+- Create a Counter Component
+- Implement a Toggle Switch
