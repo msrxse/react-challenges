@@ -13,3 +13,4 @@
 - Create a Counter Component
 - Implement a Toggle Switch
 - Build a To-Do List
+- Fetch Data from an API
