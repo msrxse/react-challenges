@@ -16,3 +16,4 @@
 - Fetch Data from an API
 - Create a Search Bar
 - Build a Dropdown Menu
+- Implement a Tabs Component
