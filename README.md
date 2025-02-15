@@ -19,3 +19,4 @@
 - Implement a Tabs Component
 - Create a Modal Component
 - Create a Portal Component
+- Build a Carousel Component

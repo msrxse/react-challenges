@@ -9,8 +9,9 @@ import DropdownMenu from './components/DropdownMenu'
 import Tabs from './components/Tabs'
 import Modal from './components/Modal'
 import Portal from './components/Portal'
+import Carousel from './components/Carousel'
 
-const VISIBLE = 'portal'
+const VISIBLE = 'carousel'
 
 function App() {
 const [visible] = useState(VISIBLE)
@@ -25,6 +26,7 @@ const [visible] = useState(VISIBLE)
     || visible === "tabs" && <Tabs/>
     || visible === "modal" && <Modal/>
     || visible === "portal" && <Portal/>
+    || visible === "carousel" && <Carousel/>
   )
 }
 
