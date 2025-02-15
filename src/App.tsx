@@ -5,8 +5,9 @@ import ToggleSwitch from './components/ToggleSwitch'
 import TodoList from './components/TodoList'
 import FetchData from './components/FetchData'
 import SearchBar from './components/SearchBar'
+import DropdownMenu from './components/DropdownMenu'
 
-const VISIBLE = 'search-data'
+const VISIBLE = 'dropdown-menu'
 
 function App() {
 const [visible] = useState(VISIBLE)
@@ -17,6 +18,7 @@ const [visible] = useState(VISIBLE)
     || visible === "todo-list" && <TodoList/>
     || visible === "fetch-data" && <FetchData/>
     || visible === "search-data" && <SearchBar/>
+    || visible === "dropdown-menu" && <DropdownMenu/>
   )
 }
 
