@@ -1,4 +1,5 @@
 {
     "editor.formatOnSave": true,
     "terminal.integrated.tabs.enabled": false,
+    "breadcrumbs.enabled": false 
 }

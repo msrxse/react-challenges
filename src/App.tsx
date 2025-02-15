@@ -7,8 +7,10 @@ import FetchData from './components/FetchData'
 import SearchBar from './components/SearchBar'
 import DropdownMenu from './components/DropdownMenu'
 import Tabs from './components/Tabs'
+import Modal from './components/Modal'
+import Portal from './components/Portal'
 
-const VISIBLE = 'tabs'
+const VISIBLE = 'portal'
 
 function App() {
 const [visible] = useState(VISIBLE)
@@ -21,6 +23,8 @@ const [visible] = useState(VISIBLE)
     || visible === "search-data" && <SearchBar/>
     || visible === "dropdown-menu" && <DropdownMenu/>
     || visible === "tabs" && <Tabs/>
+    || visible === "modal" && <Modal/>
+    || visible === "portal" && <Portal/>
   )
 }
 

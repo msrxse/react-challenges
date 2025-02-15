@@ -17,3 +17,5 @@
 - Create a Search Bar
 - Build a Dropdown Menu
 - Implement a Tabs Component
+- Create a Modal Component
+- Create a Portal Component
