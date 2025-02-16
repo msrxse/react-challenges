@@ -10,8 +10,9 @@ import Tabs from './components/Tabs'
 import Modal from './components/Modal'
 import Portal from './components/Portal'
 import Carousel from './components/Carousel'
+import ThemeContext from './components/ThemeContext'
 
-const VISIBLE = 'carousel'
+const VISIBLE = 'theme-context'
 
 function App() {
 const [visible] = useState(VISIBLE)
@@ -27,6 +28,7 @@ const [visible] = useState(VISIBLE)
     || visible === "modal" && <Modal/>
     || visible === "portal" && <Portal/>
     || visible === "carousel" && <Carousel/>
+    || visible === "theme-context" && <ThemeContext/>
   )
 }
 

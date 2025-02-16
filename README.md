@@ -20,3 +20,4 @@
 - Create a Modal Component
 - Create a Portal Component
 - Build a Carousel Component
+- Build example app using theme context
