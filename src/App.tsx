@@ -11,14 +11,16 @@ import Modal from './components/Modal'
 import Portal from './components/Portal'
 import Carousel from './components/Carousel'
 import ThemeContext from './components/ThemeContext'
+import StarRating from './components/StarRating'
 
-const VISIBLE = 'theme-context'
+const VISIBLE = 'star-rating'
 
 function App() {
 const [visible] = useState(VISIBLE)
 
   return (
     visible === "counter" && <Counter/> 
+    || visible === "star-rating" && <StarRating/>
     || visible === "toggle" && <ToggleSwitch/>
     || visible === "todo-list" && <TodoList/>
     || visible === "fetch-data" && <FetchData/>
