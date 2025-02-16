@@ -12,16 +12,16 @@ import Portal from './components/Portal'
 import Carousel from './components/Carousel'
 import ThemeContext from './components/ThemeContext'
 import StarRating from './components/StarRating'
-import SearchFilter from './components/SearchFilter'
+import MultiStepForm from './components/MultiStepForm'
 
-const VISIBLE = 'search-filter'
+const VISIBLE = 'multi-step-form'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
-    (visible === 'search-filter' && <SearchFilter />) ||
+    (visible === 'multi-step-form' && <MultiStepForm />) ||
     (visible === 'star-rating' && <StarRating />) ||
     (visible === 'toggle' && <ToggleSwitch />) ||
     (visible === 'todo-list' && <TodoList />) ||
