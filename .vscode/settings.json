@@ -1,7 +1,9 @@
 {
-    "editor.formatOnSave": true,
-    "terminal.integrated.tabs.enabled": false,
-    "breadcrumbs.enabled": false,
-    "editor.fontSize": 14,
-    "editor.minimap.enabled": false
+  "editor.formatOnSave": true,
+  "terminal.integrated.tabs.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
