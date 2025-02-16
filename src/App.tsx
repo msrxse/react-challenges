@@ -13,14 +13,16 @@ import Carousel from './components/Carousel'
 import ThemeContext from './components/ThemeContext'
 import StarRating from './components/StarRating'
 import MultiStepForm from './components/MultiStepForm'
+import VirtualizedList from './components/VirtualizedList'
 
-const VISIBLE = 'multi-step-form'
+const VISIBLE = 'virtualized-list'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'virtualized-list' && <VirtualizedList />) ||
     (visible === 'multi-step-form' && <MultiStepForm />) ||
     (visible === 'star-rating' && <StarRating />) ||
     (visible === 'toggle' && <ToggleSwitch />) ||

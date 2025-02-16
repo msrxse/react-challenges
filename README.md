@@ -23,3 +23,4 @@
 - Build example app using theme context
 - Implement a Star Rating Component
 - Build a Multi-Step Form
+- Implement a Virtualized List
