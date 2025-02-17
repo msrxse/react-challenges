@@ -14,14 +14,16 @@ import ThemeContext from './components/ThemeContext'
 import StarRating from './components/StarRating'
 import MultiStepForm from './components/MultiStepForm'
 import VirtualizedList from './components/VirtualizedList'
+import FormValidations from './components/FormValidations'
 
-const VISIBLE = 'virtualized-list'
+const VISIBLE = 'form-validations'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'form-validations' && <FormValidations />) ||
     (visible === 'virtualized-list' && <VirtualizedList />) ||
     (visible === 'multi-step-form' && <MultiStepForm />) ||
     (visible === 'star-rating' && <StarRating />) ||
