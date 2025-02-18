@@ -16,14 +16,20 @@ import MultiStepForm from './components/MultiStepForm'
 import VirtualizedList from './components/VirtualizedList'
 import FormValidations from './components/FormValidations'
 import DynamicForm from './components/FormDynamic'
+import { PostProvider } from './components/PostProvider'
 
-const VISIBLE = 'dynamic-form'
+const VISIBLE = 'post-provider'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'post-provider' && (
+      <PostProvider>
+        <p>PostProvider</p>
+      </PostProvider>
+    )) ||
     (visible === 'dynamic-form' && <DynamicForm />) ||
     (visible === 'form-validations' && <FormValidations />) ||
     (visible === 'virtualized-list' && <VirtualizedList />) ||
