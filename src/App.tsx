@@ -15,14 +15,16 @@ import StarRating from './components/StarRating'
 import MultiStepForm from './components/MultiStepForm'
 import VirtualizedList from './components/VirtualizedList'
 import FormValidations from './components/FormValidations'
+import DynamicForm from './components/FormDynamic'
 
-const VISIBLE = 'form-validations'
+const VISIBLE = 'dynamic-form'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'dynamic-form' && <DynamicForm />) ||
     (visible === 'form-validations' && <FormValidations />) ||
     (visible === 'virtualized-list' && <VirtualizedList />) ||
     (visible === 'multi-step-form' && <MultiStepForm />) ||
