@@ -17,14 +17,16 @@ import VirtualizedList from './components/VirtualizedList'
 import FormValidations from './components/FormValidations'
 import DynamicForm from './components/FormDynamic'
 import { PostProvider } from './components/PostProvider'
+import FetchCustomHook from './components/FetchCustomHook'
 
-const VISIBLE = 'post-provider'
+const VISIBLE = 'fetch-custom-hook'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'fetch-custom-hook' && <FetchCustomHook />) ||
     (visible === 'post-provider' && (
       <PostProvider>
         <p>PostProvider</p>
