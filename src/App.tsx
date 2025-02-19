@@ -19,14 +19,16 @@ import DynamicForm from './components/FormDynamic'
 import { PostProvider } from './components/PostProvider'
 import FetchCustomHook from './components/FetchCustomHook'
 import CountdownTimer from './components/CountdownTimer'
+import FormValidations2 from './components/FormValidations2'
 
-const VISIBLE = 'countdown-timer'
+const VISIBLE = 'form-validations-2'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'form-validations-2' && <FormValidations2 />) ||
     (visible === 'countdown-timer' && <CountdownTimer />) ||
     (visible === 'fetch-custom-hook' && <FetchCustomHook />) ||
     (visible === 'post-provider' && (

@@ -29,3 +29,4 @@
 - Implement a Context API for Global State
 - Create a Custom Hook to fetch data
 - Create a Countdown Timer
+- Develop a user registration form with dynamic validation
