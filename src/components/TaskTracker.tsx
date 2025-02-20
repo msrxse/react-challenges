@@ -59,31 +59,31 @@ const TaskTracker = () => {
 
   useEffect(() => {
     // with Promises
-    fetchMockData()
-      .then((data) => {
-        setTasks(data)
-      })
-      .catch((e) => {
-        setError(e.message)
-      })
-      .finally(() => setLoading(false))
+    // fetchMockData()
+    //   .then((data) => {
+    //     setTasks(data)
+    //   })
+    //   .catch((e) => {
+    //     setError(e.message)
+    //   })
+    //   .finally(() => setLoading(false))
 
     // with async await
-    // const fetchData = async () => {
-    //   try {
-    //     const result = await fetchMockData()
-    //     setTasks(result)
-    //   } catch (error) {
-    //     if (error instanceof Error) {
-    //       setError(error.message)
-    //     } else {
-    //       setError('An unknown error occurred')
-    //     }
-    //   } finally {
-    //     setLoading(false)
-    //   }
-    // }
-    // fetchData()
+    const fetchData = async () => {
+      try {
+        const result = await fetchMockData()
+        setTasks(result)
+      } catch (error) {
+        if (error instanceof Error) {
+          setError(error.message)
+        } else {
+          setError('An unknown error occurred')
+        }
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchData()
   }, [])
 
   const handleComplete = (e: ChangeEvent<HTMLInputElement>, id: number) => {
