@@ -3,7 +3,7 @@
  * Build a task tracker application that stores tasks locally, allowing users to access, delete and set complete tasks
  */
 
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useEffect, useState } from 'react'
 
 const DATA = [
   {
@@ -37,9 +37,54 @@ interface Task {
   title: string
   completed: boolean
 }
+
+const fetchMockData = (): Promise<Task[]> => {
+  return new Promise((resolve, reject) => {
+    const shouldFail = false
+    setTimeout(() => {
+      if (!shouldFail) {
+        resolve(DATA)
+      } else {
+        reject(new Error('Failed to fetch mock data'))
+      }
+    }, 1000)
+  })
+}
+
 const TaskTracker = () => {
-  const [tasks, setTasks] = useState<Task[]>(DATA)
+  const [tasks, setTasks] = useState<Task[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
   const [newTask, setNewTask] = useState('')
+
+  useEffect(() => {
+    // with Promises
+    fetchMockData()
+      .then((data) => {
+        setTasks(data)
+      })
+      .catch((e) => {
+        setError(e.message)
+      })
+      .finally(() => setLoading(false))
+
+    // with async await
+    // const fetchData = async () => {
+    //   try {
+    //     const result = await fetchMockData()
+    //     setTasks(result)
+    //   } catch (error) {
+    //     if (error instanceof Error) {
+    //       setError(error.message)
+    //     } else {
+    //       setError('An unknown error occurred')
+    //     }
+    //   } finally {
+    //     setLoading(false)
+    //   }
+    // }
+    // fetchData()
+  }, [])
 
   const handleComplete = (e: ChangeEvent<HTMLInputElement>, id: number) => {
     const { checked } = e.target
@@ -75,6 +120,14 @@ const TaskTracker = () => {
 
     setTasks(newTasks)
     setNewTask('')
+  }
+
+  if (loading) {
+    return <p>Loading...</p>
+  }
+
+  if (error) {
+    return <p style={{ color: 'red' }}>{error}</p>
   }
 
   return (
