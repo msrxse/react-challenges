@@ -20,14 +20,16 @@ import { PostProvider } from './components/PostProvider'
 import FetchCustomHook from './components/FetchCustomHook'
 import CountdownTimer from './components/CountdownTimer'
 import FormValidations2 from './components/FormValidations2'
+import TaskTracker from './components/TaskTracker'
 
-const VISIBLE = 'form-validations-2'
+const VISIBLE = 'task-tracker'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'task-tracker' && <TaskTracker />) ||
     (visible === 'form-validations-2' && <FormValidations2 />) ||
     (visible === 'countdown-timer' && <CountdownTimer />) ||
     (visible === 'fetch-custom-hook' && <FetchCustomHook />) ||
