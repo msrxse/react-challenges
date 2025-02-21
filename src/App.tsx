@@ -21,7 +21,7 @@ import FetchCustomHook from './components/FetchCustomHook'
 import CountdownTimer from './components/CountdownTimer'
 import FormValidations2 from './components/FormValidations2'
 import TaskTracker from './components/TaskTracker'
-import ExpandableFAQ from './components/ExpandableFAQ'
+import ExpandableFAQ from './components/ExpandableFAQ/ExpandableFAQ'
 
 const VISIBLE = 'expandable_faq'
 

@@ -6,7 +6,9 @@
  * to reveal its answer and collapse it again to reduce clutter
  */
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import './styles.css'
+
 interface Faqs {
   id: number
   question: string
@@ -45,44 +47,57 @@ const DATA: Faqs[] = [
   },
 ]
 
-const ExpandableFAQ = () => {
-  const [active, setActive] = useState<Faqs['id']>()
-  const handleClick = (id: number) => {
-    setActive(id)
-  }
+const fetchData = (): Promise<Faqs[]> => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(DATA), 1000)
+  })
+}
+interface AccordionProps {
+  id: number
+  title: string
+  content: string
+}
 
+const Accordion = ({ id, title, content }: AccordionProps) => {
+  return (
+    <div className="accordion">
+      <input
+        type="checkbox"
+        name={`accordion-title-${id}`}
+        className="accordion-checkbox"
+        id={`accordion-title-${id}`}
+      />
+      <label htmlFor={`accordion-title-${id}`} className="accordion-title-label">
+        {title}
+      </label>
+
+      <div className="accordion-content">{content}</div>
+    </div>
+  )
+}
+const ExpandableFAQ = () => {
+  const [data, setData] = useState<Faqs[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetchData().then((data) => {
+      setLoading(false)
+      setData(data)
+    })
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="mainlist">
+        <p>Loading...</p>
+      </div>
+    )
+  }
   return (
     <div style={{ width: '400px' }}>
-      <ul
-        style={{
-          listStyleType: 'none',
-          backgroundColor: 'hsla(240, 1.70%, 53.30%, 0.44)',
-          padding: '8px',
-          borderRadius: '4px',
-        }}
-      >
-        {DATA.map((faq) => (
-          <li
-            key={faq.id}
-            style={{
-              cursor: 'pointer',
-              borderRadius: '4px',
-              padding: '4px',
-              marginBottom: '8px',
-              backgroundColor: active === faq.id ? 'black' : 'gray',
-            }}
-            onClick={() => handleClick(faq.id)}
-          >
-            {faq.question}
-
-            {active === faq.id && (
-              <div style={{ backgroundColor: 'hsla(240, 1.90%, 31.60%, 0.44)', padding: '4px' }}>
-                {faq.answer}
-              </div>
-            )}
-          </li>
-        ))}
-      </ul>
+      {data.map((faq) => (
+        <Accordion key={faq.id} id={faq.id} title={faq.question} content={faq.answer} />
+      ))}
     </div>
   )
 }
