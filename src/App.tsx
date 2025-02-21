@@ -21,14 +21,16 @@ import FetchCustomHook from './components/FetchCustomHook'
 import CountdownTimer from './components/CountdownTimer'
 import FormValidations2 from './components/FormValidations2'
 import TaskTracker from './components/TaskTracker'
+import ExpandableFAQ from './components/ExpandableFAQ'
 
-const VISIBLE = 'task-tracker'
+const VISIBLE = 'expandable_faq'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'expandable_faq' && <ExpandableFAQ />) ||
     (visible === 'task-tracker' && <TaskTracker />) ||
     (visible === 'form-validations-2' && <FormValidations2 />) ||
     (visible === 'countdown-timer' && <CountdownTimer />) ||
