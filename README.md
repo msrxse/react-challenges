@@ -32,3 +32,4 @@
 - Develop a user registration form with dynamic validation
 - Build a task tracker application
 - Expandable FAQ Widget
+- Implement a data grid with pagination

@@ -1,0 +1,20 @@
+.table-wrap {
+  width: 600px;
+  border: 1px solid #f2e3c6;
+  background-color: #ffc6a5;
+  color: #2b2b2b;
+  text-align: right;
+}
+.main-table {
+  width: 100%;
+}
+.headers > th {
+  border: 1px solid #f2e3c6;
+  background-color: #353634;
+  color: #f2e3c6;
+  text-align: center;
+}
+
+.active {
+  background-color: #e6324b;
+}

@@ -22,14 +22,16 @@ import CountdownTimer from './components/CountdownTimer'
 import FormValidations2 from './components/FormValidations2'
 import TaskTracker from './components/TaskTracker'
 import ExpandableFAQ from './components/ExpandableFAQ/ExpandableFAQ'
+import DataGrid from './components/DataGrid/DataGrid'
 
-const VISIBLE = 'expandable_faq'
+const VISIBLE = 'data-grid'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
     (visible === 'counter' && <Counter />) ||
+    (visible === 'data-grid' && <DataGrid />) ||
     (visible === 'expandable_faq' && <ExpandableFAQ />) ||
     (visible === 'task-tracker' && <TaskTracker />) ||
     (visible === 'form-validations-2' && <FormValidations2 />) ||
