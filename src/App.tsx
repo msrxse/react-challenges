@@ -23,13 +23,15 @@ import FormValidations2 from './components/FormValidations2'
 import TaskTracker from './components/TaskTracker'
 import ExpandableFAQ from './components/ExpandableFAQ/ExpandableFAQ'
 import DataGrid from './components/DataGrid/DataGrid'
+import ProductFilter from './components/ProductFilter/ProductFilter'
 
-const VISIBLE = 'data-grid'
+const VISIBLE = 'product-filter'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
+    (visible === 'product-filter' && <ProductFilter />) ||
     (visible === 'counter' && <Counter />) ||
     (visible === 'data-grid' && <DataGrid />) ||
     (visible === 'expandable_faq' && <ExpandableFAQ />) ||

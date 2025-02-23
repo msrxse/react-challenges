@@ -1,0 +1,75 @@
+.mainDiv {
+  width: 550px;
+  border: 1px solid #baab6a;
+  background-color: #204b5e;
+  text-align: right;
+  color: #fdfac7;
+}
+.header {
+  background-color: #fbea80;
+  color: #204b5e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header > td {
+  width: 110px;
+  padding: 0 10px;
+}
+
+.rows:nth-child(even) {
+  background-color: #426b65;
+}
+
+.rows:hover {
+  background-color: #baab6a;
+  color: #204b5e;
+}
+
+.rows > td:last-child {
+  text-align: center;
+}
+
+.toolbar {
+  height: 30px;
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+  background-color: #204b5e;
+}
+
+/* Override global button styles */
+button {
+  border-radius: 0px;
+  border: 1px solid transparent;
+  padding: 0.6em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #fbea80;
+  color: #fdfac7;
+}
+/* End Override global button styles */
+
+.dropdown {
+  width: 110px;
+  z-index: 1000;
+}
+
+.dropdown > button {
+  width: 100%;
+  padding: 5px 0;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item > button {
+  width: 110px;
+}
