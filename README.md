@@ -34,3 +34,4 @@
 - Expandable FAQ Widget
 - Implement a data grid with pagination
 - Develop a product filtering system
+- Develop a input search for product categories - state with context

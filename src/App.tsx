@@ -24,13 +24,15 @@ import TaskTracker from './components/TaskTracker'
 import ExpandableFAQ from './components/ExpandableFAQ/ExpandableFAQ'
 import DataGrid from './components/DataGrid/DataGrid'
 import ProductFilter from './components/ProductFilter/ProductFilter'
+import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
 
-const VISIBLE = 'product-filter'
+const VISIBLE = 'product-filter-two'
 
 function App() {
   const [visible] = useState(VISIBLE)
 
   return (
+    (visible === 'product-filter-two' && <ProductFilter2 />) ||
     (visible === 'product-filter' && <ProductFilter />) ||
     (visible === 'counter' && <Counter />) ||
     (visible === 'data-grid' && <DataGrid />) ||
