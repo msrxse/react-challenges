@@ -3,6 +3,9 @@ import React from 'react'
 const Sidebar = () => (
   <ul>
     <li>
+      <a href="/image-carousel">ImageCarousel</a>
+    </li>
+    <li>
       <a href="/product-filter-two">ProductFilter2</a>
     </li>
     <li>

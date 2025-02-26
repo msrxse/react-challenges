@@ -23,13 +23,17 @@ import ExpandableFAQ from './components/ExpandableFAQ/ExpandableFAQ'
 import DataGrid from './components/DataGrid/DataGrid'
 import ProductFilter from './components/ProductFilter/ProductFilter'
 import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
+import ImageCarousel from './components/ImageCarousel/ImageCarousel'
+
 import Layout from './Layout'
 
 function Router() {
   let content = null
   const page = window.location.pathname
 
-  if (page === '/product-filter-two') {
+  if (page === '/image-carousel') {
+    content = <ImageCarousel />
+  } else if (page === '/product-filter-two') {
     content = <ProductFilter2 />
   } else if (page === '/product-filter') {
     content = <ProductFilter />
