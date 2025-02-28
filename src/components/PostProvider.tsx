@@ -44,6 +44,15 @@ const deletePost = (dispatch: Dispatch, payload: number) => {
   dispatch({ type: 'DELETE_POST', payload })
 }
 
+function App() {
+  return (
+    <PostProvider>
+      <p>PostProvider</p>
+    </PostProvider>
+  )
+}
+
+export default App
 export { PostProvider, usePosts, addPost, deletePost }
 
 /**
