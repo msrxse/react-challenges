@@ -16,6 +16,9 @@
 .header {
   grid-area: header;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar {
   grid-area: sidebar;

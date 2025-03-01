@@ -6,15 +6,17 @@ interface Components {
 }
 
 const Layout = ({
+  title,
   components,
   children,
 }: {
+  title: string
   components: Components
   children: React.ReactNode
 }) => {
   return (
     <div className="layout">
-      <section className="header">Header</section>
+      <section className="header">{title}</section>
       <section className="sidebar">
         <Sidebar components={components} />
       </section>

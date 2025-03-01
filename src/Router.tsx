@@ -63,9 +63,10 @@ const components = {
 function Router() {
   const pathname = window.location.pathname as keyof typeof components
   const Component = components[pathname] || null
+  const title = Component.name || 'Header'
 
   return (
-    <Layout components={components}>
+    <Layout components={components} title={title}>
       {Component ? <Component /> : <div>Component not found</div>}
     </Layout>
   )
