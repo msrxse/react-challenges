@@ -40,4 +40,5 @@ const ExampleComponent = () => {
   )
 }
 
+App.displayName = 'ThemeContext'
 export default App

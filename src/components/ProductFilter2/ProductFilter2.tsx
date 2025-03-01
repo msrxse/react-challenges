@@ -81,4 +81,5 @@ const App = () => {
   )
 }
 
+App.displayName = 'ProductFilter2'
 export default App

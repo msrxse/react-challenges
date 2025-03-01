@@ -53,4 +53,6 @@ const App = () => {
     </ul>
   )
 }
+
+App.displayName = 'FetchCustomHook'
 export default App

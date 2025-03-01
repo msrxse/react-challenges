@@ -102,5 +102,7 @@ const PostList = () => {
     </div>
   )
 }
+
+App.displayName = 'PostProvider'
 export default App
 export { PostProvider, usePosts, addPost, deletePost }

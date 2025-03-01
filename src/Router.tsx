@@ -60,7 +60,11 @@ function Router() {
   const pathname = window.location.pathname as keyof typeof components
   const Component = components[pathname] || null
 
-  return <Layout>{Component ? <Component /> : <div>Component not found</div>}</Layout>
+  return (
+    <Layout components={components}>
+      {Component ? <Component /> : <div>Component not found</div>}
+    </Layout>
+  )
 }
 
 export default Router

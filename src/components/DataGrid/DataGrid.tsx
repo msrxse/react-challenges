@@ -128,4 +128,5 @@ const DataGrid = () => {
     </div>
   )
 }
+
 export default DataGrid
