@@ -14,7 +14,7 @@ function Sidebar({ components }: { components: Components }) {
 
   return (
     <div>
-      <ul>
+      <ul style={{ listStyleType: 'none' }}>
         {componentsToArray.map((each) => (
           <li key={each.key}>
             <a href={each.key}>{each.value}</a>
