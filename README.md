@@ -37,3 +37,4 @@
 - Develop a input search for product categories - state with context
 - Implement a carousel component that automatically cycles through images
 - Implement a debounce function
+- Implement Array.prototype.reduce

@@ -25,6 +25,7 @@ import ProductFilter from './components/ProductFilter/ProductFilter'
 import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
 import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 import Debounce from './components/Debounce'
+import ArrayReduce from './components/ArrayReduce'
 
 import Layout from './Layout'
 
@@ -56,6 +57,7 @@ const components = {
   '/product-filter-2': ProductFilter2,
   '/image-carousel': ImageCarousel,
   '/debounce': Debounce,
+  '/array_reduce': ArrayReduce,
 } as const
 
 function Router() {
