@@ -36,3 +36,4 @@
 - Develop a product filtering system
 - Develop a input search for product categories - state with context
 - Implement a carousel component that automatically cycles through images
+- Implement a debounce function

@@ -24,6 +24,7 @@ import DataGrid from './components/DataGrid/DataGrid'
 import ProductFilter from './components/ProductFilter/ProductFilter'
 import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
 import ImageCarousel from './components/ImageCarousel/ImageCarousel'
+import Debounce from './components/Debounce'
 
 import Layout from './Layout'
 
@@ -54,6 +55,7 @@ const components = {
   '/product-filter': ProductFilter,
   '/product-filter-2': ProductFilter2,
   '/image-carousel': ImageCarousel,
+  '/debounce': Debounce,
 } as const
 
 function Router() {
