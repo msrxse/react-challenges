@@ -32,7 +32,7 @@ function Sidebar() {
     <div>
       <ul>
         {components.map((each) => (
-          <li>
+          <li key={each[0]}>
             <a href={each[0]}>{each[1]}</a>
           </li>
         ))}

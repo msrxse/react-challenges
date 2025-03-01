@@ -14,7 +14,7 @@ import MultiStepForm from './components/MultiStepForm'
 import VirtualizedList from './components/VirtualizedList'
 import FormValidations from './components/FormValidations'
 import DynamicForm from './components/FormDynamic'
-import { PostProvider } from './components/PostProvider'
+import PostProvider from './components/PostProvider'
 import FetchCustomHook from './components/FetchCustomHook'
 import CountdownTimer from './components/CountdownTimer'
 import FormValidations2 from './components/FormValidations2'
@@ -26,7 +26,6 @@ import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
 import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 
 import Layout from './Layout'
-import React from 'react'
 
 const components = {
   '/counter': Counter,
@@ -55,20 +54,13 @@ const components = {
   '/product-filter': ProductFilter,
   '/product-filter-2': ProductFilter2,
   '/image-carousel': ImageCarousel,
-}
+} as const
 
 function Router() {
-  const { pathname } = window.location
+  const pathname = window.location.pathname as keyof typeof components
+  const Component = components[pathname] || null
 
-  return (
-    <Layout>
-      {components[pathname] ? (
-        React.createElement(components[pathname], {})
-      ) : (
-        <div>Component not found</div>
-      )}
-    </Layout>
-  )
+  return <Layout>{Component ? <Component /> : <div>Component not found</div>}</Layout>
 }
 
 export default Router
