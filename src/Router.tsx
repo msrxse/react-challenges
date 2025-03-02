@@ -28,6 +28,7 @@ import Debounce from './components/Debounce'
 import ArrayReduce from './components/ArrayReduce'
 import Classnames from './components/Classnames'
 import Flatten from './components/Flatten'
+import Throttle from './components/Throttle'
 
 import Layout from './Layout'
 
@@ -66,6 +67,7 @@ const components = {
   '/array_reduce': ArrayReduce,
   '/classnames': Classnames,
   '/flatten': Flatten,
+  '/throttle': Throttle,
 } as const
 
 function Router() {

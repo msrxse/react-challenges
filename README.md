@@ -40,3 +40,4 @@
 - Implement Array.prototype.reduce
 - Implement the classnames function
 - Implement a function flatten
+- Implement a throttle function
