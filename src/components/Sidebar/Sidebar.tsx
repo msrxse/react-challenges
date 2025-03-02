@@ -1,10 +1,12 @@
-/**
- *
- */
+import './styles.css'
+
 interface Components {
   [key: string]: ({ ...props }) => React.ReactElement
 }
 
+/**
+ * SIDEBAR
+ */
 function Sidebar({ components }: { components: Components }) {
   const componentsToArray = []
 
@@ -14,7 +16,7 @@ function Sidebar({ components }: { components: Components }) {
 
   return (
     <div>
-      <ul style={{ listStyleType: 'none' }}>
+      <ul className="sidebar_main">
         {componentsToArray.map((each) => (
           <li key={each.key}>
             <a href={each.key}>{each.value}</a>

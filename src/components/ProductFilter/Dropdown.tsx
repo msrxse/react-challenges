@@ -13,12 +13,12 @@ const Dropdown = ({ placeholder, items, onSelectionCb }: Dropdown) => {
     return onSelectionCb({ [placeholder]: selection })
   }
   return (
-    <div className="dropdown">
+    <div className="productFilter_dropdown">
       <button onClick={() => setOpen(!open)}>{placeholder}</button>
       {open && (
-        <ul className="menu">
+        <ul className="productFilter_menu">
           {items.map((each) => (
-            <li className="menu-item" key={each}>
+            <li className="productFilter_menu-item" key={each}>
               <button onClick={() => handleSelection(each)}>{each}</button>
             </li>
           ))}

@@ -1,36 +1,36 @@
-.mainDiv {
+.productFilter_mainDiv {
   width: 550px;
   border: 1px solid #baab6a;
   background-color: #204b5e;
   text-align: right;
   color: #fdfac7;
 }
-.header {
+.productFilter_header {
   background-color: #fbea80;
   color: #204b5e;
   font-weight: bold;
   text-align: center;
 }
 
-.header > td {
+.productFilter_header > td {
   width: 110px;
   padding: 0 10px;
 }
 
-.rows:nth-child(even) {
+.productFilter_rows:nth-child(even) {
   background-color: #426b65;
 }
 
-.rows:hover {
+.productFilter_rows:hover {
   background-color: #baab6a;
   color: #204b5e;
 }
 
-.rows > td:last-child {
+.productFilter_rows > td:last-child {
   text-align: center;
 }
 
-.toolbar {
+.productFilter_toolbar {
   height: 30px;
   width: 550px;
   display: flex;
@@ -39,7 +39,7 @@
 }
 
 /* Override global button styles */
-button {
+.productFilter_toolbar button {
   border-radius: 0px;
   border: 1px solid transparent;
   padding: 0.6em;
@@ -50,26 +50,26 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+.productFilter_toolbar button:hover {
   border-color: #fbea80;
   color: #fdfac7;
 }
 /* End Override global button styles */
 
-.dropdown {
+.productFilter_dropdown {
   width: 110px;
   z-index: 1000;
 }
 
-.dropdown > button {
+.productFilter_dropdown > button {
   width: 100%;
   padding: 5px 0;
 }
-.menu {
+.productFilter_menu {
   list-style-type: none;
   padding: 0;
 }
 
-.menu-item > button {
+.productFilter_menu-item > button {
   width: 110px;
 }

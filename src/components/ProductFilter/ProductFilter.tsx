@@ -91,8 +91,8 @@ const ProductFilter = () => {
   }
 
   return (
-    <div className="mainDiv">
-      <div className="toolbar">
+    <div className="productFilter_mainDiv">
+      <div className="productFilter_toolbar">
         <Dropdown placeholder="categories" items={categories} onSelectionCb={handleSelectionCb} />
         <Dropdown placeholder="priceRanges" items={priceRanges} onSelectionCb={handleSelectionCb} />
         <Dropdown placeholder="brands" items={brands} onSelectionCb={handleSelectionCb} />
@@ -101,7 +101,7 @@ const ProductFilter = () => {
       </div>
       <table>
         <thead>
-          <tr className="header">
+          <tr className="productFilter_header">
             <td>Categories</td>
             <td>PriceRanges</td>
             <td>Brands</td>
@@ -111,7 +111,7 @@ const ProductFilter = () => {
         </thead>
         <tbody>
           {filteredProducts.map((each) => (
-            <tr key={each.id} className="rows">
+            <tr key={each.id} className="productFilter_rows">
               <td>{each.categories}</td>
               <td>{each.priceRanges}</td>
               <td>{each.brands}</td>

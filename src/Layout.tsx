@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar/Sidebar'
 
 interface Components {
   [key: string]: ({ ...props }) => React.ReactElement
@@ -15,12 +15,12 @@ const Layout = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className="layout">
-      <section className="header">{title}</section>
-      <section className="sidebar">
+    <div className="layout_main">
+      <section className="layout_header">{title}</section>
+      <section className="layout_sidebar">
         <Sidebar components={components} />
       </section>
-      <main className="content">{children}</main>
+      <main className="layout_content">{children}</main>
     </div>
   )
 }
