@@ -26,6 +26,7 @@ import ProductFilter2 from './components/ProductFilter2/ProductFilter2'
 import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 import Debounce from './components/Debounce'
 import ArrayReduce from './components/ArrayReduce'
+import Classnames from './components/Classnames'
 
 import Layout from './Layout'
 
@@ -58,12 +59,13 @@ const components = {
   '/image-carousel': ImageCarousel,
   '/debounce': Debounce,
   '/array_reduce': ArrayReduce,
+  '/classnames': Classnames,
 } as const
 
 function Router() {
   const pathname = window.location.pathname as keyof typeof components
   const Component = components[pathname] || null
-  const title = Component.name || 'Header'
+  const title = Component?.name || 'Header'
 
   return (
     <Layout components={components} title={title}>

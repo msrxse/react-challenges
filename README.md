@@ -38,3 +38,4 @@
 - Implement a carousel component that automatically cycles through images
 - Implement a debounce function
 - Implement Array.prototype.reduce
+- Implement the classnames function
