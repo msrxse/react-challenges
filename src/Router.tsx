@@ -27,6 +27,7 @@ import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 import Debounce from './components/Debounce'
 import ArrayReduce from './components/ArrayReduce'
 import Classnames from './components/Classnames'
+import Flatten from './components/Flatten'
 
 import Layout from './Layout'
 
@@ -64,6 +65,7 @@ const components = {
   '/debounce': Debounce,
   '/array_reduce': ArrayReduce,
   '/classnames': Classnames,
+  '/flatten': Flatten,
 } as const
 
 function Router() {

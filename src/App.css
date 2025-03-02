@@ -21,8 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fbea80;
-  color: #1a1a1a;
+  background-color: #f07241;
+  color: #1c2130;
 }
 
 .layout_sidebar {
@@ -35,4 +35,6 @@
   grid-area: content;
   overflow-y: scroll;
   height: calc(100vh - 40px);
+  padding: 10px;
+  background-color: #333333;
 }
