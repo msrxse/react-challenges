@@ -2,17 +2,18 @@
  * Implement a function flatten that returns a newly-created array with all
  * sub-array elements concatenated recursively into a single level
  */
-import React from 'react'
+type NestedNumberArray = (number | NestedNumberArray)[]
 
-function flatten(value: number[]) {
-  const result = []
-  const copy = value.slice()
+function flatten(value: NestedNumberArray) {
+  const result: number[] = []
+  const copy = value.slice() // Make a shallow copy to avoid mutating the input
 
   while (copy.length) {
-    const item = copy.shift()
+    const item = copy.shift() // item can be number | NestedNumberArray[] | undefined
+
     if (Array.isArray(item)) {
-      copy.unshift(...item)
-    } else {
+      copy.unshift(...item) // Safe to spread since we checked it's an array
+    } else if (typeof item === 'number') {
       result.push(item)
     }
   }

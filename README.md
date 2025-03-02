@@ -39,3 +39,4 @@
 - Implement a debounce function
 - Implement Array.prototype.reduce
 - Implement the classnames function
+- Implement a function flatten
