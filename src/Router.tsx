@@ -29,6 +29,7 @@ import ArrayReduce from './components/ArrayReduce'
 import Classnames from './components/Classnames'
 import Flatten from './components/Flatten'
 import Throttle from './components/Throttle'
+import TrafficLight from './components/TrafficLight'
 
 import Layout from './Layout'
 
@@ -68,6 +69,7 @@ const components = {
   '/classnames': Classnames,
   '/flatten': Flatten,
   '/throttle': Throttle,
+  '/traffic_light': TrafficLight,
 } as const
 
 function Router() {

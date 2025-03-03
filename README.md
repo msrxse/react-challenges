@@ -41,3 +41,4 @@
 - Implement the classnames function
 - Implement a function flatten
 - Implement a throttle function
+- Build a traffic light switching colors at intervals and loop indefinitely
