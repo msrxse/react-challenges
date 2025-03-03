@@ -30,6 +30,7 @@ import Classnames from './components/Classnames'
 import Flatten from './components/Flatten'
 import Throttle from './components/Throttle'
 import TrafficLight from './components/TrafficLight'
+import DigitalClock from './components/DigitalClock/DigitalClock'
 
 import Layout from './Layout'
 
@@ -63,13 +64,14 @@ const components = {
   '/fetch-data': FetchData,
   '/theme-context': ThemeContext,
   '/post-provider': PostProvider,
-  '/fetchCustomHook': FetchCustomHook,
+  '/fetch-custom-ook': FetchCustomHook,
   '/debounce': Debounce,
-  '/array_reduce': ArrayReduce,
+  '/array-reduce': ArrayReduce,
   '/classnames': Classnames,
   '/flatten': Flatten,
   '/throttle': Throttle,
   '/traffic_light': TrafficLight,
+  '/digital-clock': DigitalClock,
 } as const
 
 function Router() {

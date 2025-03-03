@@ -1,0 +1,73 @@
+.digital-clock {
+  display: flex;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.digital-clock-digit {
+  display: grid;
+  grid-template-columns: 10px 20px 10px;
+  grid-template-rows: 10px 20px 10px 20px 10px;
+  gap: 2px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.digital-clock-segment {
+  background-color: #222;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.digital-clock-segment.digital-clock-on {
+  background-color: red;
+  box-shadow: 0 0 5px red;
+}
+.digital-clock-segment.digital-clock-off {
+  background-color: #333;
+}
+
+.digital-clock-horizontal {
+  height: 10px;
+  width: 100%;
+}
+.digital-clock-vertical {
+  width: 10px;
+  height: 100%;
+}
+
+.digital-clock-top {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.digital-clock-middle {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+.digital-clock-bottom {
+  grid-column: 1 / 4;
+  grid-row: 5;
+}
+
+.digital-clock-top-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.digital-clock-top-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+.digital-clock-bottom-left {
+  grid-column: 1;
+  grid-row: 4;
+}
+.digital-clock-bottom-right {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.digital-clock-colon {
+  font-size: 2rem;
+  color: red;
+  padding: 0 5px;
+}
