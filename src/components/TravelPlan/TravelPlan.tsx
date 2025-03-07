@@ -86,8 +86,9 @@ function TravelPlan() {
   }
 
   if (!plan) {
-    return null
+    return <p>loading...</p>
   }
+
   const planetIds = plan[0].childPlaces
   return (
     <>
