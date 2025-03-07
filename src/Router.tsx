@@ -31,6 +31,7 @@ import Flatten from './components/Flatten'
 import Throttle from './components/Throttle'
 import TrafficLight from './components/TrafficLight'
 import DigitalClock from './components/DigitalClock/DigitalClock'
+import TravelPlan from './components/TravelPlan/TravelPlan'
 
 import Layout from './Layout'
 
@@ -72,6 +73,7 @@ const components = {
   '/throttle': Throttle,
   '/traffic_light': TrafficLight,
   '/digital-clock': DigitalClock,
+  '/travel_plan': TravelPlan,
 } as const
 
 function Router() {
