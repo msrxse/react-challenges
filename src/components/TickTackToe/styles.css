@@ -1,0 +1,41 @@
+.tick-tack-toe-main {
+  width: 560px;
+  background-color: teal;
+}
+
+.tick-tack-toe-grid {
+  width: 360px;
+  display: grid;
+  grid-template-rows: repeat(3, fr);
+  grid-template-columns: repeat(3, 50%);
+  gap: 10px;
+}
+
+.tick-tack-toe-toolbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+}
+
+.tick-tack-toe-item {
+  background-color: #333333;
+  color: white;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tick-tack-toe-toolbar .active {
+  background-color: red;
+}
+
+.tick-tack-toe-footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+}

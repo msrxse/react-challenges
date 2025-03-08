@@ -32,6 +32,7 @@ import Throttle from './components/Throttle'
 import TrafficLight from './components/TrafficLight'
 import DigitalClock from './components/DigitalClock/DigitalClock'
 import TravelPlan from './components/TravelPlan/TravelPlan'
+import TickTackToe from './components/TickTackToe/TickTackToe'
 
 import Layout from './Layout'
 
@@ -74,6 +75,7 @@ const components = {
   '/traffic_light': TrafficLight,
   '/digital-clock': DigitalClock,
   '/travel_plan': TravelPlan,
+  '/tick-tack-toe': TickTackToe,
 } as const
 
 function Router() {

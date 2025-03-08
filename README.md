@@ -44,3 +44,4 @@
 - Build a traffic light switching colors at intervals and loop indefinitely
 - Create a widget that renders the current time in HH:MM:SS format
 - Create a travel plan from deep object structure - need to flatten
+- Build a tic-tac-toe game that is playable by two players
