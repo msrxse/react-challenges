@@ -45,3 +45,4 @@
 - Create a widget that renders the current time in HH:MM:SS format
 - Create a travel plan from deep object structure - need to flatten
 - Build a tic-tac-toe game that is playable by two players
+- Build an image carousel that displays a sequence of images

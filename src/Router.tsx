@@ -33,6 +33,7 @@ import TrafficLight from './components/TrafficLight'
 import DigitalClock from './components/DigitalClock/DigitalClock'
 import TravelPlan from './components/TravelPlan/TravelPlan'
 import TickTackToe from './components/TickTackToe/TickTackToe'
+import ImageCarousel2 from './components/ImageCarousel2/ImageCarousel2'
 
 import Layout from './Layout'
 
@@ -72,10 +73,11 @@ const components = {
   '/classnames': Classnames,
   '/flatten': Flatten,
   '/throttle': Throttle,
-  '/traffic_light': TrafficLight,
+  '/traffic-light': TrafficLight,
   '/digital-clock': DigitalClock,
-  '/travel_plan': TravelPlan,
+  '/travel-plan': TravelPlan,
   '/tick-tack-toe': TickTackToe,
+  '/image-carousel-2': ImageCarousel2,
 } as const
 
 function Router() {

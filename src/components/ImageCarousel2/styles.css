@@ -1,0 +1,48 @@
+.image-carousel-2-main {
+}
+.image-carousel-2-inner-div {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  background-color: back;
+  position: relative;
+}
+
+.image-carousel-2-button-previous {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 10px);
+}
+
+.image-carousel-2-button-next {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 10px);
+}
+
+.image-carousel-2-button-toolbar {
+  position: absolute;
+  right: calc(50% - 50px);
+  bottom: 10px;
+}
+
+.image-carousel-2-button-toolbar > span {
+  padding: 0 8px;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+}
+
+.image-carousel-2-button-toolbar > span:not(.image-carousel-2-button-active) {
+  background-color: black;
+}
+.image-carousel-2-button-toolbar > span:hover {
+  background-color: red;
+}
+.image-carousel-2-button-active {
+  color: red;
+  background-color: red;
+}
