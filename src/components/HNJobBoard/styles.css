@@ -27,6 +27,7 @@
 }
 .nh-job-board-button-loading {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .nh-job-board-cards {

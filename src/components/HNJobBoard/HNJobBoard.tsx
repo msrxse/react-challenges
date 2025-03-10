@@ -138,9 +138,8 @@ function HNJobBoard() {
       </ul>
       <div className="nh-job-board-footer">
         <button
-          className={`nh-job-board-button ${
-            paginationLoading ? 'nh-job-board-button-loading' : ''
-          }`}
+          className={`nh-job-board-button ${paginationLoading ? 'nh-job-board-button-loading' : ''}
+          ${jobBoardIds.length === 0 ? 'nh-job-board-button-loading' : ''}`}
           disabled={paginationLoading}
           onClick={handlePaginationClick}
         >
