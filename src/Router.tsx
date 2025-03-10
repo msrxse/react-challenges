@@ -34,6 +34,7 @@ import DigitalClock from './components/DigitalClock/DigitalClock'
 import TravelPlan from './components/TravelPlan/TravelPlan'
 import TickTackToe from './components/TickTackToe/TickTackToe'
 import ImageCarousel2 from './components/ImageCarousel2/ImageCarousel2'
+import HNJobBoard from './components/HNJobBoard/HNJobBoard'
 
 import Layout from './Layout'
 
@@ -78,6 +79,7 @@ const components = {
   '/travel-plan': TravelPlan,
   '/tick-tack-toe': TickTackToe,
   '/image-carousel-2': ImageCarousel2,
+  '/hn_job_board': HNJobBoard,
 } as const
 
 function Router() {

@@ -1,0 +1,58 @@
+.nh-job-board-main-div {
+  background-color: #e0e4cc;
+  color: #2a2829;
+}
+.nh-job-board-main-div > h3 {
+  color: #fa6900;
+  padding: 10px;
+}
+
+.nh-job-board-main-list {
+  height: 700px;
+  padding: 10px 0;
+  list-style-type: none;
+  overflow: scroll;
+}
+
+.nh-job-board-main-list li p {
+  margin: 0;
+  padding: 0;
+}
+
+.nh-job-board-main-list > li + li {
+  margin-top: 10px;
+}
+.nh-job-board-button {
+  background-color: #fa6900;
+}
+.nh-job-board-button-loading {
+  opacity: 0.5;
+}
+
+.nh-job-board-cards {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 0 10px;
+  margin: 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+  background-color: #e7e8df;
+}
+.nh-job-board-cards > p {
+  font-weight: 800;
+}
+
+.nh-job-board-cards > div {
+  display: flex;
+}
+
+.nh-job-board-cards > div > p {
+  padding-right: 10px;
+}
+
+.nh-job-board-footer {
+  padding: 10px;
+}
