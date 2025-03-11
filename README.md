@@ -47,3 +47,4 @@
 - Build a tic-tac-toe game that is playable by two players
 - Build an image carousel that displays a sequence of images
 - Build a job board that displays the latest job postings fetched from the Hacker News API
+- Scaled up TodoList with Reducer and Context

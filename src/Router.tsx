@@ -35,6 +35,7 @@ import TravelPlan from './components/TravelPlan/TravelPlan'
 import TickTackToe from './components/TickTackToe/TickTackToe'
 import ImageCarousel2 from './components/ImageCarousel2/ImageCarousel2'
 import HNJobBoard from './components/HNJobBoard/HNJobBoard'
+import TodoListScaled from './components/TodoListScaled/TodoListScaled'
 
 import Layout from './Layout'
 
@@ -80,6 +81,7 @@ const components = {
   '/tick-tack-toe': TickTackToe,
   '/image-carousel-2': ImageCarousel2,
   '/hn_job_board': HNJobBoard,
+  '/todo-list-scaled': TodoListScaled,
 } as const
 
 function Router() {
