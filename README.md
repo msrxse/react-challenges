@@ -49,3 +49,4 @@
 - Build a job board that displays the latest job postings fetched from the Hacker News API
 - Scaled up TodoList with Reducer and Context
 - Build a stopwatch widget which can measure how much time has passed
+- Build a component that allows transferring of items between two lists.

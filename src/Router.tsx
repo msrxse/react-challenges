@@ -37,6 +37,7 @@ import ImageCarousel2 from './components/ImageCarousel2/ImageCarousel2'
 import HNJobBoard from './components/HNJobBoard/HNJobBoard'
 import TodoListScaled from './components/TodoListScaled/TodoListScaled'
 import Stopwatch from './components/Stopwatch'
+import TransferList from './components/TransferList'
 
 import Layout from './Layout'
 
@@ -84,6 +85,7 @@ const components = {
   '/hn_job_board': HNJobBoard,
   '/todo-list-scaled': TodoListScaled,
   '/stop-watch': Stopwatch,
+  '/transfer_list': TransferList,
 } as const
 
 function Router() {
